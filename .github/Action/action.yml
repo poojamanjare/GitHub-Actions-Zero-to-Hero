@@ -1,4 +1,4 @@
-name : install python
+name : install_python
 runs:
   using: "composite"
 
