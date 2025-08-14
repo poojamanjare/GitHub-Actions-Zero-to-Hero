@@ -11,13 +11,11 @@ jobs:
         python-version: [3.8]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-
+    
     - name: Install dependencies
+      uses: poojamanjare/CompositeActions@main
+
+    - name: run depedencies
       run: |
         python -m pip install --upgrade pip
         pip install pytest
