@@ -9,7 +9,7 @@ jobs:
     steps:
     
     - name: Install dependencies
-      uses: poojamanjare/CompositeActions@main
+      uses: ./.github/Action/install_python
 
     - name: run depedencies
       run: |
